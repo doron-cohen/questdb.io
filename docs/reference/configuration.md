@@ -60,7 +60,7 @@ shared.worker.count=5
 ```
 
 ```shell title="Customizing the worker count via environment variable"
-export QBD_SHARED_WORKER_COUNT=5
+export QDB_SHARED_WORKER_COUNT=5
 ```
 
 ## Docker
@@ -95,7 +95,7 @@ Server configuration can be passed to QuestDB running in Docker by using the
 `-e` flag to pass an environment variable to a container:
 
 ```bash
-docker run -p 4000:4000 -e QBD_HTTP_BIND_TO=0.0.0.0:4000 questdb/questdb
+docker run -p 4000:4000 -e QDB_HTTP_BIND_TO=0.0.0.0:4000 questdb/questdb
 ```
 
 ### Mounting a volume
